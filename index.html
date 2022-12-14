@@ -36,9 +36,9 @@
                     My <b>english level</b> is B1-B2. I'm freshman at <b>AKFA university</b>.</p>
 
                 <ul class="about__contacts">
-                    <li><a href="https://t.me/a_savk1mov"><img src="https://img.icons8.com/color/512/telegram-app--v1.png" width="40" height="40" /></a></li>
-                    <li><a href="https://instagram.com/a_savk1mov"><img src="https://img.icons8.com/color/512/instagram-new.png" width="40" height="40" /></a></li>
-                    <li><a href="https://www.linkedin.com/in/azizbeksavkimov/"><img src="https://img.icons8.com/color/512/linkedin-circled.png" width="40" height="40" /></a></li>
+                    <li><a href="https://t.me/a_savk1mov"><img src="https://img.icons8.com/color/512/telegram-app--v1.png" alt="telegram icon" width="40" height="40" /></a></li>
+                    <li><a href="https://instagram.com/a_savk1mov"><img src="https://img.icons8.com/color/512/instagram-new.png" alt="instagram icon" width="40" height="40" /></a></li>
+                    <li><a href="https://www.linkedin.com/in/azizbeksavkimov/"><img src="https://img.icons8.com/color/512/linkedin-circled.png" alt="linkedin icon" width="40" height="40" /></a></li>
                 </ul>
 
                 <h2 class="title">Skills: </h2>
@@ -79,7 +79,7 @@ using namespace std;
 int searchIndex(const int* array, int size, int value) {
     int index = -1;
 
-    for (int i = 0; i < size; i++) {
+    for (int i = 0; i &lt; size; i++) {
         if (*(array + i) == value) {
             index = i;
             break;
@@ -96,11 +96,11 @@ int main () {
 
     int array[size];
 
-    for (int i = 0; i < size; i++) {
+    for (int i = 0; i &lt; size; i++) {
         cin >> *(array + i);
     }
 
-    cout << searchIndex(array, size, value) << endl;
+    cout &lt;&lt; searchIndex(array, size, value) &lt;&lt; endl;
 
     return 0;
 }
