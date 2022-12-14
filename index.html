@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/styles/default.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/highlight.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header__container container">
+            <h1 class="header__title">Aza's CV</h1>
+            <nav class="header__nav nav">
+                <ul class="nav__list">
+                    <li class="nav__list-item"><a href="#about">About</a></li>
+                    <li class="nav__list-item"><a href="#about">Skills</a></li>
+                    <li class="nav__list-item"><a href="#about">My works</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main container">
+        <section class="about">
+            <img class="about__photo" src="./assets/img/photo.jpeg" alt="My photo">
+            <div class="about__content">
+                <h2 class="title">About:</h2>
+                <p class="about__text">Hi there! I'm frontend developer from Tashkent. I've some experience in the field.
+                    I'm interested in backend also, in the future I'm going to work as backend or fullstack developer.
+                    My <b>english level</b> is B1-B2. I'm freshman at <b>AKFA university</b>.</p>
+
+                <ul class="about__contacts">
+                    <li><a href="https://t.me/a_savk1mov"><img src="https://img.icons8.com/color/512/telegram-app--v1.png" width="40" height="40" /></a></li>
+                    <li><a href="https://instagram.com/a_savk1mov"><img src="https://img.icons8.com/color/512/instagram-new.png" width="40" height="40" /></a></li>
+                    <li><a href="https://www.linkedin.com/in/azizbeksavkimov/"><img src="https://img.icons8.com/color/512/linkedin-circled.png" width="40" height="40" /></a></li>
+                </ul>
+
+                <h2 class="title">Skills: </h2>
+                <div class="skills__item">
+                    <b>Frontend: </b>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JS</li>
+                        <li>TS</li>
+                        <li>React.js</li>
+                        <li>Next.js</li>
+                        <li>Redux</li>
+                    </ul>
+                </div>
+                <div class="skills__item">
+                    <b>Tools: </b>
+                    <ul>
+                        <li>VSCode</li>
+                        <li>Github-Desktop</li>
+                        <li>Postman</li>
+                        <li>Webpack</li>
+                        <li>Vite</li>
+                    </ul>
+                </div>
+
+                <h2 class="title">My works: </h2>
+                <div class="works">
+                    <a href="https://aza-breaking-bad.netlify.app/">Breaking Bad</a> (<a href="https://github.com/220879cs07/breaking-bad">code here</a>) - TS, React.js, Redux-toolkit, MUI, SASS
+                </div>
+
+                <h2 class="title">Code: </h2>
+                <pre>
+                    <code class="language-cpp">
+#include "iostream"
+using namespace std;
+
+int searchIndex(const int* array, int size, int value) {
+    int index = -1;
+
+    for (int i = 0; i < size; i++) {
+        if (*(array + i) == value) {
+            index = i;
+            break;
+        }
+    }
+
+    return index;
+}
+
+int main () {
+    int value, size;
+    cin >> value;
+    cin >> size;
+
+    int array[size];
+
+    for (int i = 0; i < size; i++) {
+        cin >> *(array + i);
+    }
+
+    cout << searchIndex(array, size, value) << endl;
+
+    return 0;
+}
+                    </code>
+                </pre>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__container container">
+            <a href="https://github.com/aza-me" class="footer__github">Aza-me</a>
+            <p class="footer__year">2022</p>
+            <a class="footer__rsschool" href="https://rs.school/js/"><img src="https://rs.school/images/rs_school_js.svg" alt="RSSchool logo"></a>
+        </div>
+    </footer>
+
+    <script>hljs.highlightAll();</script>
+</body>
+</html>
